@@ -15,12 +15,13 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install dependencies
+pip install --upgrade pip
 pip install -r requirements.txt
 
 # Add virtual environment as a Jupyter kernel
 python -m ipykernel install --user --name=venv --display-name "Python (venv)"
 
-# Run the Jupyter notebook
+# If desired, run the Jupyter notebook.  Not needed for running in VS Code
 jupyter notebook 50k_demo.ipynb
 ```
 
@@ -32,23 +33,31 @@ python -m venv venv
 venv\Scripts\activate
 
 # Install dependencies
+pip install --upgrade pip
 pip install -r requirements.txt
 
 # Add virtual environment as a Jupyter kernel
 python -m ipykernel install --user --name=venv --display-name "Python (venv)"
 
-# Run the Jupyter notebook
+# If desired, run the Jupyter notebook.  Not needed for running in VS Code
 jupyter notebook 50k_demo.ipynb
 ```
 
-## Note:
 
-If you don't have Jupyter installed globally, you can install it directly into the virtual environment by running:
+
+## Having problems?
+
+If you want to use Jupyter, but don't have it installed globally, you can install it directly into the virtual environment by running:
 
 ```bash
 pip install jupyter
 ```
 
+If you have other problems, it's a good idea to update pip:
+
+```bash
+
+```
 
 
 You can also run this demo in Google Colab by clicking the badge above.
